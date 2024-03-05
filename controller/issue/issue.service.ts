@@ -217,6 +217,7 @@ class IssueService {
         issue,
         requestContext.domain
       );
+      issueRequests.issue_type = "ISSUE";
 
       const bppResponse: any = await bppIssueService.issue(
         context,
